@@ -1,0 +1,388 @@
+/* ESTILOS GENERALES */
+
+/** YA  EN SASS **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+    background-color: #000;
+}
+
+h1 {
+    display: none;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: 700px;
+    text-align: center
+}
+
+.subTitulo {
+    font-size: 20px;
+    font-weight: 700px;
+    text-align: center
+}
+
+.der-reservados {
+    font-size: 14px;
+}
+
+.bg-negro {
+    background-color: #000;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+}
+
+/*MENU*/
+
+/**YA EN SASS **/
+
+.menu {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: font-weight auto;
+}
+
+nav.menu ul li a:hover {
+    font-weight: 700;
+}
+
+
+/*SECCION PRINCIPAL*/
+
+.grid {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "hero hero hero"
+        "art art art"
+        "noticiaSemana noticiaSemana playlist";
+    grid-template-rows: 80vh 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.intro {
+    height: 80vh;
+    width: 100%;
+    grid-area: hero;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    position: absolute;
+    object-fit: cover;
+    transition: filter 1.2s, width 1.2s, height 1.2s;
+}
+
+img.image:hover {
+    filter: blur(3px);
+    width: 120%;
+    height: 120%;
+}
+
+.text {
+    position: relative;
+    z-index: 2;
+    justify-items: center;
+}
+
+div.text h2 {
+    font-size: 50px;
+}
+
+div.text p,
+h2.text {
+    padding-bottom: 30px;
+}
+
+.articulos {
+    grid-area: art;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.articulo-1,
+.articulo-2,
+.articulo-3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+
+}
+
+
+/*SECCION SECUNDARIA*/
+
+.noticia_image {
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    position: absolute;
+    object-fit: cover;
+    transition: filter 1.2s, width 1.2s, height 1.2s;
+}
+
+img.noticia_image:hover {
+    filter: blur(3px);
+    width: 120%;
+    height: 120%;
+}
+
+.noticiaSemana {
+    grid-area: noticiaSemana;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.noticia_text {
+    position: relative;
+    z-index: 2;
+}
+
+div.noticia_text p {
+    padding-bottom: 30px;
+}
+
+.playlist {
+    grid-area: playlist;
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    align-content: middle;
+}
+
+div.playlist h2 {
+    padding-bottom: 20px;
+}
+
+/*ARTICULOS*/
+
+/** YA EN SASS **/
+
+section.container-fluid {
+    padding-top: 40px;
+}
+
+section.container-fluid h2.titulo {
+    padding-bottom: 30px;
+}
+
+div.card-body {
+    padding: 20px 0px;
+}
+
+P.card-link {
+    color: #20e3b2;
+}
+
+div.col-lg {
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+/*PODCAST*/
+
+/** YA EN SASS **/
+
+table {
+    margin: 50px auto;
+    width: 85%;
+    border: solid #fff 1px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: solid #fff 1px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/*EQUIPO*/
+
+.equipo {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 120px;
+    margin-bottom: 40px;
+}
+
+.equipo-img {
+    margin-top: 40px;
+    height: 500px;
+    width: 100%;
+}
+
+.equipo-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+/*** YA EN SASS ***/
+
+section {
+    padding-top: 120px;
+}
+
+.estiloFormulario {
+    margin: auto;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+input,
+textarea {
+    width: 80%;
+    margin: 0;
+}
+
+input[type=text],
+textarea {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #fff;
+    font-family: inherit;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+form.estiloFormulario div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.estiloNewsletter {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=checkbox] {
+    width: 0;
+}
+
+.boton {
+    height: 50px;
+    width: 100px;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700px;
+    transition: background 1.2s;
+}
+
+input.boton:hover {
+    background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
+}
+
+
+/*FOOTER*/
+
+/*** YA EN SASS **/
+
+footer {
+    width: 100%;
+    padding-top: 3px;
+    background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
+}
+
+footer div {
+    width: 100%;
+    margin: auto;
+    background: #000;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer div img {
+    margin-top: 30px;
+}
+
+footer div a i {
+    font-size: 30px;
+    padding: 10px;
+    color: white
+}
+
+footer div p {
+    padding: 10px;
+}

@@ -1,0 +1,22 @@
+.podcast {
+    padding-bottom: 40px;
+    @include espaciado;
+
+    h2.titulo {
+        padding-bottom: 30px;
+    }
+
+    .table--white-font {
+        color: $blanco;
+    }
+    
+    .table{
+        th,
+        td {
+        border: solid #fff 1px;
+        text-align: center;
+        vertical-align: middle;
+        }
+    }
+}
+

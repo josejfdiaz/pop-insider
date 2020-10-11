@@ -1,0 +1,27 @@
+.articulos {
+    padding-bottom: 40px;
+    @include espaciado;
+
+    h2.titulo {
+        padding-bottom: 30px;
+    }
+
+    .carousel-inner .carousel-item {
+        height: 500px;
+    
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 500px;
+        }
+    }
+}
+
+div.card-body {
+    padding: 20px 0px;
+
+    p.card-link {
+        color: $verde;
+    }
+}
