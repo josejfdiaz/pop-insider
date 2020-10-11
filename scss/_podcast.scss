@@ -2,11 +2,7 @@
     padding-bottom: 40px;
     background: $gradiente-rojo;
     @include espaciado;
-
-    h2.titulo {
-        padding-bottom: 30px;
-    }
-
+    
     .reproductor {
         border-color: solid $blanco 1px;
         width: auto;
