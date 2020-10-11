@@ -1,6 +1,7 @@
 .intro {
     height: 80vh;
     width: 100%;
+    margin-bottom: 5px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -45,15 +46,17 @@
     }
 }
 
-
-@for $i from 1 through 3 {
-    .articulo-#{$i} {
-        height: 40vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        overflow: hidden;
+.art-destacados {
+    margin-bottom: 5px;
+    @for $i from 1 through 3 {
+        .articulo-#{$i} {
+            height: 40vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            overflow: hidden;
+        }
     }
 }
 
