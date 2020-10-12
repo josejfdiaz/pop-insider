@@ -98,12 +98,25 @@
     width: 400px;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
 
+    div.text{
+        border: solid $blanco 1px;
+
+        h2.titulo {
+            vertical-align: middle;
+            margin: 120px 0px;
+        }
+
+        p.subTitulo {
+            padding-top: px ;
+        }
+    }
+
     video {
-        object-fit: fill;
+        object-fit: cover;
         width: 100%;
         height: 100%;
         position: absolute;
