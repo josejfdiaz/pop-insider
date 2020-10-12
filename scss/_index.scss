@@ -48,6 +48,7 @@
 
 .art-destacados {
     margin-bottom: 5px;
+
     @for $i from 1 through 3 {
         .articulo-#{$i} {
             height: 40vh;
@@ -92,3 +93,19 @@
     }
 }
 
+.playlist {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}
