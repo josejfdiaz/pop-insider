@@ -7,6 +7,11 @@
         border-color: solid $blanco 1px;
         width: auto;
         height: auto;
+        display: flex;
+
+        div {
+            margin: 10px;
+        }
     }
 }
 

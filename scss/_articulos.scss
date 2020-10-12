@@ -1,10 +1,5 @@
 .articulos {
     padding-bottom: 40px;
-    @include espaciado;
-
-    h2.titulo {
-        padding-bottom: 30px;
-    }
 
     .carousel-inner .carousel-item {
         height: 500px;
