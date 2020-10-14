@@ -1,12 +1,11 @@
 .ep-destacado {
     padding-bottom: 40px;
     background: $gradiente-rojo;
+    margin-bottom: 5px;
     @include espaciado;
     
     .reproductor {
-        border-color: solid $blanco 1px;
-        width: auto;
-        height: auto;
+        border: solid $blanco 1px;
         display: flex;
 
         div {
