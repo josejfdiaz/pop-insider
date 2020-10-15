@@ -5,15 +5,24 @@
     @include espaciado;
 
     h2 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .reproductor {
+        margin: auto;
         border: solid $blanco 1px;
+        width: 80%;
         display: flex;
 
         div {
             margin: 20px;
+        }
+
+        div {
+            a i {
+                font-size: 30px;
+                margin: 10px;
+            }
         }
     }
 }
@@ -31,5 +40,23 @@ $episodio:(
 }
 
 .plataformas {
-    margin: 20px;
+    margin: 40px auto;
+    display: flex;
+
+    div{
+        height: 60px;
+        width: 60px;
+        margin: 40px;
+
+        a img {
+            height: 50px;
+            width: 50px;
+            transition: height 0.3s, width 0.3s;
+
+            &:hover {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
 }
