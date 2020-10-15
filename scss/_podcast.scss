@@ -3,13 +3,17 @@
     background: $gradiente-rojo;
     margin-bottom: 5px;
     @include espaciado;
-    
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
     .reproductor {
         border: solid $blanco 1px;
         display: flex;
 
         div {
-            margin: 10px;
+            margin: 20px;
         }
     }
 }
@@ -26,3 +30,6 @@ $episodio:(
     }
 }
 
+.plataformas {
+    margin: 20px;
+}
