@@ -5,20 +5,38 @@
     @include espaciado;
 
     h2 {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .reproductor {
         margin: auto;
         border: solid $blanco 1px;
-        width: 80%;
+        width: 80vw;
         display: flex;
 
-        div {
-            margin: 20px;
+        @media (max-width: 576px) {
+            flex-direction: column;
+            width: 90vw;
         }
 
         div {
+            margin: 20px;
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        .rep-iconos{
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 576px) {
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+            }
+
             a i {
                 font-size: 30px;
                 margin: 10px;
