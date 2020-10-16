@@ -35,6 +35,16 @@ body {
     .der-reservados {
         font-size: 0.625rem;
     }
+
+    .logo {
+        height: 4.61rem;
+        width: 14.12rem;
+
+        @media (max-width: 576px) {
+            height: 2.8rem;
+            width: 7.6rem;
+        }
+    }
 }
 
 $fondos:(
