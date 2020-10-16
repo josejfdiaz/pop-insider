@@ -9,8 +9,7 @@
 body {
     color: $blanco;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 400px;
+    font-size: 1.25rem;
     background-color: $negro;
 
     h1 {
@@ -18,23 +17,23 @@ body {
     }
 
     .titulo {
-        font-size: $title-size*2;
-        font-weight: 700px;
+        font-size: 2.5rem;
+        font-weight: 43.75rem;
         text-align: center;
     }
     
     .subTitulo {
-        font-size: $title-size;
-        font-weight: 700px;
+        font-size: 1.25rem;
+        font-weight: 43.75rem;
         text-align: center;
     }
 
     .espaciado {
-        padding-top: 120px;
+        padding-top: 7.5rem;
     }
     
     .der-reservados {
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 }
 
@@ -65,6 +64,10 @@ footer {
         display: inline-block;
         padding: 10px;
         margin: auto;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     div {
@@ -79,12 +82,19 @@ footer {
             margin-top: 30px;
         }
 
-        a i {
-            font-size: 30px;
-            padding: 10px;
-            color: $blanco;
-        }
+        div {
+            
+            a i {
+                font-size: 30px;
+                padding: 10px;
+                color: $blanco;
+                transition: font-size 0.3s;
 
+                &:hover {
+                    font-size: 35px;
+                }
+            }
+        }
         p {
             padding: 10px;
         }
