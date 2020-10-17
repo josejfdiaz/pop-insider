@@ -110,8 +110,12 @@
         border: solid $blanco 1px;
         height: 57vh;
         width: auto;
-        background: none;
-        transition: filter 1.2s;
+        backdrop-filter: none;
+        transition: backdrop-filter 1.2s;
+
+        &:hover {
+            backdrop-filter: blur(3px);
+        }
     }
 
     video {
@@ -120,13 +124,6 @@
         height: 100%;
         position: absolute;
         z-index: 1;
-        transition: filter 1.2s, width 1.2s, height 1.2s;
-
-        &:hover {
-            width: 120%;
-            height: 120%;
-            filter: blur(3px);
-        }
     }
 }
 
