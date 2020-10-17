@@ -57,6 +57,10 @@
         margin-top: 40px;
         height: 400px;
         width: 400px;
-
+        
+        @media (max-width: 576px) {
+            height: 200px;
+            width: 200px;
+        }
     }
 }

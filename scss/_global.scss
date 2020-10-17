@@ -32,10 +32,6 @@ body {
         padding-top: 7.5rem;
     }
     
-    .der-reservados {
-        font-size: 0.625rem;
-    }
-
     .logo {
         height: 4.61rem;
         width: 14.12rem;
@@ -105,8 +101,17 @@ footer {
                 }
             }
         }
-        p {
+        p.der-reservados {
+            font-size: 0.625rem;
             padding: 10px;
+
+            @media (max-width: 768px) {
+                margin: 0;
+            }
         }
     }
 }
+
+/**.der-reservados {
+    font-size: 0.625rem;
+}**/
