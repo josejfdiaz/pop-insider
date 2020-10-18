@@ -89,15 +89,23 @@ footer {
         }
 
         div {
+            height: 40px;
+            width: 40px;
+            margin: auto;
             
-            a i {
-                font-size: 30px;
-                padding: 10px;
-                color: $blanco;
-                transition: font-size 0.3s;
 
-                &:hover {
-                    font-size: 35px;
+            a {
+                margin: 5px;
+
+                i {
+                    font-size: 30px;
+                    padding: 10px;
+                    color: $blanco;
+                    transition: font-size 0.3s;
+
+                    &:hover {
+                        font-size: 35px;
+                    }
                 }
             }
         }
@@ -112,6 +120,3 @@ footer {
     }
 }
 
-/**.der-reservados {
-    font-size: 0.625rem;
-}**/
