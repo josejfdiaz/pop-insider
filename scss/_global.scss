@@ -66,16 +66,6 @@ footer {
     padding-top: 3px;
     background: $gradiente-verde;
 
-    ul li {
-        display: inline-block;
-        padding: 10px;
-        margin: auto;
-
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-
     div {
         width: 100%;
         margin: auto;
@@ -88,27 +78,39 @@ footer {
             margin-top: 1.87rem;
         }
 
-        div {
-            height: 40px;
-            width: 40px;
+        ul li {
+            display: inline-block;
+            padding: 10px;
             margin: auto;
+            transition: color 0.3s;
             
-
             a {
-                margin: 5px;
+                text-decoration: none;
+                color: $blanco;
 
-                i {
-                    font-size: 30px;
-                    padding: 10px;
-                    color: $blanco;
-                    transition: font-size 0.3s;
-
-                    &:hover {
-                        font-size: 35px;
-                    }
+                &:hover {
+                    color: $verde;
+                    text-decoration: none;
                 }
             }
+    
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
+
+        div a i {
+            font-size: 30px;
+            padding: 10px;
+            color: $blanco;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $verde;
+            }
+        }
+
+        
         p.der-reservados {
             font-size: 0.625rem;
             padding: 10px;
@@ -119,4 +121,3 @@ footer {
         }
     }
 }
-
