@@ -34,7 +34,7 @@
 .text {
     position: relative;
     z-index: 2;
-    justify-items: center;
+    text-align: center;
 
     h2 {
         font-size: 3.12rem;
@@ -93,11 +93,13 @@
     .noticia_text {
         position: relative;
         z-index: 2;
+        text-align: center;
     }
 }
 
 .playlist {
     height: 60vh;
+    max-height: 26.5rem;
     width: 100%;
     position: relative;
     display: flex;
@@ -108,13 +110,22 @@
 
     div.text{
         border: solid $blanco 1px;
+        width: 100%;
         height: 57vh;
-        width: auto;
+        max-height: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         backdrop-filter: none;
         transition: backdrop-filter 1.2s;
 
         &:hover {
             backdrop-filter: blur(3px);
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0 10px;
         }
     }
 
@@ -126,12 +137,3 @@
         z-index: 1;
     }
 }
-
-
-/**  div.text{
-    border: solid $blanco 1px;
-    padding: 120px 0;
-
-    h2.titulo {
-        padding: 0 10px;
-    } **/
