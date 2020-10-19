@@ -61,6 +61,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    transition: background auto;
 
     div {
         display: flex;
@@ -69,6 +70,17 @@
     }
 }
 
+div.episodio.bg-turquesa:hover {
+    background:  #11998e;
+}
+
+div.episodio.bg-morado:hover {
+    background:  #9733ee;
+}
+
+div.episodio.bg-amarillo:hover {
+    background:  #ffa751;
+}
 
 .plataformas {
     margin: 40px auto;
