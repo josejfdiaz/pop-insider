@@ -22,7 +22,7 @@ body {
         text-align: center;
     }
     
-    .subTitulo {
+    .subtitulo {
         font-size: 1.25rem;
         font-weight: 43.75rem;
         text-align: center;
@@ -46,12 +46,15 @@ body {
 $fondos:(
     negro: $negro,
     blanco: $blanco,
-    verde: $verde
+    verde: $verde,
+    amarillo: $gradiente-amarillo,
+    morado: $gradiente-morado,
+    turquesa: $gradiente-turquesa,
 );
 
 @each $fondo, $color in $fondos {
     .bg-#{$fondo} {
-        background-color: $color;
+        background: $color;
     }
 }
 
@@ -100,7 +103,7 @@ footer {
         }
 
         div a i {
-            font-size: 30px;
+            font-size: 1.87rem;
             padding: 10px;
             color: $blanco;
             transition: color 0.3s;

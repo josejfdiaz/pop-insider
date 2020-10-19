@@ -7,7 +7,7 @@
     }
 
     .form-row{
-        .form-control--black {
+        .form-control-black {
             display: block;
             width: 100%;
             height: calc(1.5em + 0.75rem + 2px);
@@ -34,8 +34,7 @@
             color: $negro;
             font-family: inherit;
 
-            .modal-header--mod {
-                display: -ms-flexbox;
+            .modal-header-mod {
                 display: flex;
                 -ms-flex-align: start;
                 align-items: flex-start;
@@ -47,8 +46,7 @@
                 border-top-right-radius: calc(0.3rem - 1px);
             }
 
-            .modal-footer--mod {
-                display: -ms-flexbox;
+            .modal-footer-mod {
                 display: flex;
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
@@ -65,7 +63,7 @@
     }
 }
 
-.btn--form {
+.btn-form {
     margin: auto;
     color: $negro;
     background-color: $blanco;

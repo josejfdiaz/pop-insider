@@ -55,33 +55,20 @@
     }
 }
 
-$episodio:(
-    amarillo: $gradiente-amarillo,
-    morado: $gradiente-morado,
-    turquesa: $gradiente-turquesa
-);
+.episodio{
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 
-@each $episodio, $color in $episodio {
-    .ep-#{$episodio} {
-        background: $color;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
-.eps-destcados {
-
-    @for $i from 1 through 3 {
-        .ep-#{$i} {
-            @extend .articulo-1;
-        }
-    }
-}
-
-.ep-image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-}
 
 .plataformas {
     margin: 40px auto;
@@ -94,29 +81,29 @@ $episodio:(
         margin: auto;
 
         a {
-            height: 60px;
-            width: 60px;
+            height: 3.75rem;
+            width: 3.75rem;
             margin: 40px;
 
             @media (max-width: 576px) {
-                height: 30px;
-                width: 30px;
+                height: 1.85rem;
+                width: 1.85rem;
                 margin: 20px;
             }
 
             img {
-                height: 50px;
-                width: 50px;
+                height: 3.12rem;
+                width: 3.12rem;
                 transition: height 0.3s, width 0.3s;
                 
                 @media (max-width: 576px) {
-                    height: 30px;
-                    width: 30px;
+                    height: 1.85rem;
+                    width: 1.85rem;
                 }
                 
                 &:hover {
-                    height: 60px;
-                    width: 60px;
+                    height: 3.75rem;
+                    width: 3.75rem;
                 }
             }
         }

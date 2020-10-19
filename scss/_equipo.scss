@@ -45,22 +45,22 @@
         }
 
         .btn-equipo {
-            width: 200px;
-            height: 50px;
+            width: 12.5rem;
+            height: 3.12;
             margin: 0;
-            @extend .btn--form;
+            @extend .btn-form;
         }
     }
 
     .equipo-img {
         z-index: 2;
         margin-top: 40px;
-        height: 400px;
-        width: 400px;
+        height:  25rem;
+        width: 25rem;
         
         @media (max-width: 576px) {
-            height: 200px;
-            width: 200px;
+            height: 12.5rem;
+            width: 12.5rem;
         }
     }
 }
